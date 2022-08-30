@@ -1,0 +1,28 @@
+###
+GET http://localhost:3000/empleado
+
+###
+POST http://localhost:3000/empleado
+Content-Type: application/json
+
+{
+    "nombre":"Batman",
+    "puesto":"programador Jr",
+    "correo": "batman@ligadelajusticia.com",
+    "sueldo": 10
+}
+
+###
+DELETE http://localhost:3000/empleado/1
+
+###
+GET http://localhost:3000/empleado/1
+
+###
+PUT http://localhost:3000/empleado/3
+Content-Type: application/json
+
+{
+    "puesto":"Gerente de Sistemas.",
+    "sueldo":20
+}
